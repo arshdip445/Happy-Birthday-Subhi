@@ -1,0 +1,63 @@
+/* LoveLetter.css */
+
+/* Container for the whole section */
+.love-letter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f4f4; /* Soft background color */
+    padding: 20px;
+  }
+  
+  /* Styling for the notepad box */
+  .notepad {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+  }
+  
+  /* Title for the love letter */
+  .letter-title {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: #e63946;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Content of the letter */
+  .letter-content {
+    font-family: 'Georgia', serif;
+    color: #333;
+    font-size: 1rem;
+    white-space: pre-line;  /* Preserve line breaks */
+  }
+  
+  /* Optional: Add a bit of texture to make it look like real paper */
+  .notepad {
+    background: url('https://www.transparenttextures.com/patterns/soft-paper.png');
+    background-color: #fdfbf2;
+  }
+  
+  /* Typing cursor */
+  .typing-cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: #e63946; /* Red color cursor */
+    animation: blink 0.7s step-end infinite;
+  }
+  
+  /* Typing cursor blink animation */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
